@@ -37,7 +37,7 @@ nav{
     height: 10vh;
     background-color: rgba(42, 58, 74, 0.3);
     backdrop-filter: blur(10px);
-    position: fixed; /* Make nav sticky */
+    position: fixed; 
     top: 0;
     left: 0;
     display: flex;
@@ -339,7 +339,7 @@ button:hover{
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease;
     border-bottom: 3px solid transparent;
-    position: relative; /* Added for skill-level positioning */
+    position: relative; 
 }
 .service-card:hover {
     transform: translateY(-10px);
@@ -376,7 +376,7 @@ button:hover{
 }
 
 .skill-level.junior {
-    background-color: #f7b731; /* A different color for junior */
+    background-color: #f7b731;
     color: var(--background-dark);
 }
 
@@ -539,4 +539,15 @@ footer {
     .service-card, .contact-form, .about-text {
         padding: 25px;
     }
+}
+
+
+/* Lớp để ẩn/hiện menu dropdown */
+.dropdown.active {
+    transform: translateY(0);
+}
+
+/* Lớp để ngăn cuộn trang khi menu mở */
+body.no-scroll {
+    overflow: hidden;
 }
