@@ -67,8 +67,13 @@
                     <img src="main.png" alt="About me image">
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
-                    <h3>Frontend Developer & Student</h3>
+                    <h3>Web Developer & Second Year IT Student</h3>
                     <p>I am a dedicated and passionate web developer currently pursuing my studies. My journey into the world of programming started with a fascination for how websites work, which quickly grew into a love for building elegant and functional digital experiences. I thrive on challenges and am constantly exploring new technologies to enhance my skill set. My goal is to create web applications that are not only visually appealing but also provide a seamless and intuitive user experience.</p>
+                    <div class="education-info">
+                        <h4>Education and Background</h4>
+                        <p><strong>University:</strong> University of Transportation Ho Chi Minh City</p>
+                        <p><strong>Hometown:</strong> Chau Thanh, Tien Giang, Viet Nam</p>
+                    </div>
                     <a href="#contact"><button>Get In Touch</button></a>
                 </div>
             </div>
@@ -83,21 +88,25 @@
                     <i class="fa-brands fa-html5"></i>
                     <h3>HTML5</h3>
                     <p>Structuring web pages and content with the latest standard markup language.</p>
+                    <div class="skill-level senior">Senior</div>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fa-brands fa-css3-alt"></i>
                     <h3>CSS3</h3>
                     <p>Designing and styling modern, responsive layouts for a great user experience.</p>
+                    <div class="skill-level senior">Senior</div>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <i class="fa-brands fa-js"></i>
                     <h3>JavaScript</h3>
                     <p>Enabling interactive and dynamic functionality on web pages to engage users.</p>
+                    <div class="skill-level junior">Junior</div>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <i class="fa-brands fa-git-alt"></i>
                     <h3>Git</h3>
                     <p>Using version control to efficiently manage code and collaborate on projects.</p>
+                    <div class="skill-level senior">Senior</div>
                 </div>
             </div>
         </div>
@@ -154,7 +163,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer>
     <p>&copy; 2025 Khắc Huy. All Rights Reserved.</p>
   </footer>
@@ -164,7 +173,6 @@
     AOS.init({offset: 50, once: true});
   </script>
 
-  <!-- ✅ Chèn trực tiếp nội dung từ script.js -->
   <script>
     const dropdownMenu = document.querySelector('.dropdown');
     const body = document.querySelector('body');
@@ -202,7 +210,7 @@
             setTimeout(typeWriter, speed);
         }
         else{
-            setTimeout(eraseText, 1500); 
+            setTimeout(eraseText, 1500);
         }
     }
 
@@ -219,7 +227,7 @@
     }
 
     window.onload = function() {
-        if (textElement) { 
+        if (textElement) {
             typeWriter();
         }
     };

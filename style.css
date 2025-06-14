@@ -309,6 +309,23 @@ button:hover{
     margin-bottom: 20px;
 }
 
+.education-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-info h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.education-info p {
+    margin-bottom: 10px;
+}
+
+
 /* --- Skills & Services Section --- */
 .services-grid {
     display: grid;
@@ -322,6 +339,7 @@ button:hover{
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease;
     border-bottom: 3px solid transparent;
+    position: relative; /* Added for skill-level positioning */
 }
 .service-card:hover {
     transform: translateY(-10px);
@@ -340,6 +358,26 @@ button:hover{
 .service-card p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.skill-level {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.skill-level.senior {
+    background-color: var(--primary-color);
+    color: var(--background-dark);
+}
+
+.skill-level.junior {
+    background-color: #f7b731; /* A different color for junior */
+    color: var(--background-dark);
 }
 
 /* --- Contact Section --- */
