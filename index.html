@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <title>Khắc Huy</title>
+</head>
+<body>
+    <nav>
+        <div class="header-background">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Khắc <span>Huy</span>
+            </div>
+            <div class="nav-container">
+                <div class="links">
+                    <a href="#home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+                    <a href="#introduction" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Introduction</a>
+                    <a href="#skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Skills</a>
+                    <a href="#services" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Services</a>
+                    <a href="#contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                <a href="#home">Home</a>
+                <a href="#introduction">Introduction</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Hi, I'm <span>Khắc Huy</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">I'm a <span class="typewriter-text"></span><span class="cursor">|</span></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">a web developer with experience in developing modern web applications. I am passionate about technology and always looking for opportunities to learn and improve my skills.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lekhachuy1902" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LeKhacHuy1902/Gym-management-system.git" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/share/16bt3KQM5d/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="#contact"><button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">Hire Me </button></a>
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="main.png" alt="Khắc Huy Portrait">
+            </div>
+        </div>
+    </section>
+
+    <section id="introduction">
+        <div class="section-container" data-aos="fade-up">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="main.png" alt="About me image">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Frontend Developer & Student</h3>
+                    <p>I am a dedicated and passionate web developer currently pursuing my studies. My journey into the world of programming started with a fascination for how websites work, which quickly grew into a love for building elegant and functional digital experiences. I thrive on challenges and am constantly exploring new technologies to enhance my skill set. My goal is to create web applications that are not only visually appealing but also provide a seamless and intuitive user experience.</p>
+                    <a href="#contact"><button>Get In Touch</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container" data-aos="fade-up">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Structuring web pages and content with the latest standard markup language.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Designing and styling modern, responsive layouts for a great user experience.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Enabling interactive and dynamic functionality on web pages to engage users.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Using version control to efficiently manage code and collaborate on projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-container" data-aos="fade-up">
+            <h2 class="section-title">What I <span>Offer</span></h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>Web Design</h3>
+                    <p>Creating visually stunning and user-friendly designs that enhance user experience and engagement.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive and interactive client-side applications using modern web technologies.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Developing robust server-side logic and APIs to power web applications from the ground up.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Application</h3>
+                    <p>Building and deploying scalable full-stack web applications to meet specific business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container" data-aos="fade-up">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container">
+                 <form action="#" class="contact-form" data-aos="fade-right">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info" data-aos="fade-left">
+                     <h3>Contact Information</h3>
+                     <p><i class="fa-solid fa-envelope"></i> huylk4597@gmail.com</p>
+                     <p><i class="fa-solid fa-phone"></i> (+84) 083 555 2953</p>
+                     <div class="social-links-contact">
+                        <a href="www.linkedin.com/in/lekhachuy1902" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/LeKhacHuy1902/Gym-management-system.git" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/16bt3KQM5d/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+    <p>&copy; 2025 Khắc Huy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset: 50, once: true});
+  </script>
+
+  <!-- ✅ Chèn trực tiếp nội dung từ script.js -->
+  <script>
+    const dropdownMenu = document.querySelector('.dropdown');
+    const body = document.querySelector('body');
+    const dropdownLinks = document.querySelectorAll('.dropdown .links a');
+
+    function hamburg(){
+        dropdownMenu.style.transform = 'translateY(0)';
+        body.style.overflow = 'hidden';
+    }
+
+    function cancel(){
+        dropdownMenu.style.transform = 'translateY(-100%)';
+        body.style.overflow = 'auto';
+    }
+
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', cancel);
+    });
+
+    const texts = [
+        "DEVELOPER",
+        "STUDENT",
+        "PROGRAMMER"
+    ];
+
+    let speed = 100;
+    const textElement = document.querySelector('.typewriter-text');
+    let textIndex = 0;
+    let characterIndex = 0;
+
+    function typeWriter(){
+        if(characterIndex < texts[textIndex].length){
+            textElement.textContent += texts[textIndex].charAt(characterIndex);
+            characterIndex++;
+            setTimeout(typeWriter, speed);
+        }
+        else{
+            setTimeout(eraseText, 1500); 
+        }
+    }
+
+    function eraseText(){
+        if(textElement.textContent.length > 0){
+            textElement.textContent = textElement.textContent.slice(0, -1);
+            setTimeout(eraseText, 50);
+        }
+        else{
+            textIndex = (textIndex + 1) % texts.length;
+            characterIndex = 0;
+            setTimeout(typeWriter, 500);
+        }
+    }
+
+    window.onload = function() {
+        if (textElement) { 
+            typeWriter();
+        }
+    };
+  </script>
+</body>
+</html>
