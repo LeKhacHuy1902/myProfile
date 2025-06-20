@@ -397,10 +397,10 @@ footer {
     display: none;
     cursor: pointer;
     width: 30px;
-    height: 24px; /* Điều chỉnh chiều cao */
+    height: 24px; 
     position: relative;
-    z-index: 1001; /* Đảm bảo nó luôn ở trên nav */
-    /* Reset default button styles */
+    z-index: 1001; 
+    
     background: transparent;
     border: none;
     padding: 0;
@@ -478,30 +478,30 @@ footer {
     }
 }
 
-@media (max-width: 576px) { /* New media query for slightly larger mobile devices */
+@media (max-width: 576px) { 
     .content h1 {
-        font-size: 2.5rem; /* Adjusted font size for better fit */
+        font-size: 2.5rem; 
     }
     .content .typewriter {
-        font-size: 1.8rem; /* Adjusted font size for better fit */
+        font-size: 1.8rem; 
     }
 }
 
 @media (max-width: 480px) {
     .content h1 {
-        font-size: 2rem; /* Reduced from 2.2rem to prevent cutoff */
+        font-size: 2rem; 
     }
     .content .typewriter {
-        font-size: 1.3rem; /* Reduced from 1.5rem to prevent cutoff */
-        height: auto; /* Allow height to adjust based on content */
-        min-height: 40px; /* Ensure a minimum height for the typewriter effect */
+        font-size: 1.3rem; 
+        height: auto; 
+        min-height: 40px;
     }
-    /* Ensure the content area has enough padding or margin */
+    
     #home .content {
-        padding: 0 15px; /* Add some horizontal padding */
+        padding: 0 15px; 
     }
     .typewriter .cursor {
-        vertical-align: middle; /* Align cursor better with text */
+        vertical-align: middle; 
     }
     .mobile-menu { width: 85%; }
     .bg-main { height: 350px; }
