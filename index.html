@@ -22,12 +22,17 @@
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
+        <button class="hamburger" id="hamburger-button" aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
-        </div>
+        </button>
+        <script>
+            document.getElementById('hamburger-button').addEventListener('click', function() {
+                this.classList.toggle('open');
+                toggleMenu();
+            });
+        </script>
     </nav>
 
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
@@ -216,6 +221,9 @@
             overlay.classList.toggle('active');
             body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
         }
+
+        // Add Event Listener for the hamburger button
+        document.getElementById('hamburger-button').addEventListener('click', toggleMenu);
 
         $(function() {
             // --- Typewriter Effect ---
