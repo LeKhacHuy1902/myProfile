@@ -28,6 +28,19 @@ html, body {
     background: linear-gradient(135deg, var(--bg-dark-primary), var(--bg-dark-secondary));
     color: var(--text-white);
     overflow-x: hidden;
+    position: relative; /* Add this to allow absolute positioning of particles */
+    z-index: 0; /* Ensure body content is above particles */
+}
+
+/* New: Particles background container */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send it behind other content */
+    background: linear-gradient(135deg, var(--bg-dark-primary), var(--bg-dark-secondary)); /* Match body background */
 }
 
 .sr-only {
@@ -42,6 +55,17 @@ html, body {
     border-width: 0;
 }
 
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
 
 /* --- New Navigation Bar --- */
 nav {
@@ -112,6 +136,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative; /* Add this to ensure content is above particles */
+    z-index: 1; /* Ensure sections are above particles */
 }
 
 .section-container {
@@ -275,13 +301,9 @@ spline-viewer::shadow #logo {
     display: none !important;
 }
 
-.background-elements::before,
-.background-elements::after {
-    content: ""; position: absolute; width: 350px; height: 350px; border-radius: 50%; background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, transparent 70%); z-index: -1; pointer-events: none; filter: blur(30px);
+.background-elements {
+    display: none; 
 }
-.background-elements::before { top: 10%; left: 10%; }
-.background-elements::after { bottom: 10%; right: 10%; }
-
 
 /* --- Introduction Section --- */
 .about-content {
@@ -376,9 +398,8 @@ spline-viewer::shadow #logo {
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none; border-color: var(--primary-color); box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
 }
-/* ----- ĐIỀU CHỈNH DUY NHẤT Ở ĐÂY ----- */
 .contact-form button {
-    align-self: center; /* Căn giữa nút "Send Message" */
+    align-self: center; 
 }
 .contact-info { flex-basis: 35%; }
 .contact-info h3 { font-size: 2rem; margin-bottom: 25px; color: var(--primary-color); }
@@ -392,6 +413,8 @@ spline-viewer::shadow #logo {
 /* --- Footer --- */
 footer {
     background: var(--bg-dark-primary); text-align: center; padding: 25px 0; margin-top: auto; border-top: 1px solid var(--primary-shadow-light);
+    position: relative; /* Ensure footer is above particles */
+    z-index: 1;
 }
 
 /* --- Hamburger Menu & Mobile Menu --- */
