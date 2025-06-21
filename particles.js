@@ -1,8 +1,7 @@
-// particles.js
 document.addEventListener('DOMContentLoaded', function() {
     const particlesContainer = document.createElement('div');
     particlesContainer.id = 'particles-js';
-    document.body.prepend(particlesContainer); // Add to the beginning of the body
+    document.body.prepend(particlesContainer);
 
     particlesJS('particles-js', {
         "particles": {
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             },
             "color": {
-                "value": "#8a2be2" // Primary color from your CSS
+                "value": "#8a2be2"
             },
             "shape": {
                 "type": "circle",
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#9370db", // Light primary color
+                "color": "#9370db",
                 "opacity": 0.4,
                 "width": 1
             },
