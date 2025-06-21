@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khắc Huy</title>
+    <meta name="description" content="Portfolio của Khắc Huy - một lập trình viên web đam mê và sáng tạo." />
+    <title>Khắc Huy | Web Developer</title>
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -27,25 +28,23 @@
             <span></span>
             <span></span>
         </button>
-        <script>
-            document.getElementById('hamburger-button').addEventListener('click', function() {
-                this.classList.toggle('open');
-                toggleMenu();
-            });
-        </script>
     </nav>
 
-    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     <div class="mobile-menu" id="mobileMenu">
-        <div class="close-btn" onclick="toggleMenu()">
-            <i class="fas fa-times"></i>
+        <div class="mobile-menu-header">
+            <div class="nav-logo"><span class="logo-khac">Khắc</span> Huy</div>
+            <button class="close-btn-mobile" id="close-menu-btn" aria-label="Close menu">&times;</button>
         </div>
-        <a href="#home" onclick="toggleMenu()">Home</a>
-        <a href="#introduction" onclick="toggleMenu()">Introduction</a>
-        <a href="#skills" onclick="toggleMenu()">Skills</a>
-        <a href="#services" onclick="toggleMenu()">Services</a>
-        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    
+        <div class="mobile-nav-links">
+            <a href="#home">Home</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
+
 
     <section id="home">
         <div class="container">
@@ -55,11 +54,11 @@
                 <p data-aos="flip-down" data-aos-duration="1500">a web developer with experience in developing modern web applications. I am passionate about technology and always looking for opportunities to learn and improve my skills.</p>
                 <div class="buttons">
                     <a href="#contact"><button>Hire Me</button></a>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/lekhachuy1902" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/LeKhacHuy1902/Gym-management-system.git" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.facebook.com/share/16bt3KQM5d/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lekhachuy1902" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/LeKhacHuy1902/Gym-management-system.git" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/16bt3KQM5d/" target="_blank" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="bg-main-container">
@@ -75,7 +74,7 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="main.png" alt="About me image">
+                    <img src="main.png" alt="Ảnh chân dung của Khắc Huy">
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
                     <h3>Web Developer & Second Year IT Student</h3>
@@ -100,11 +99,7 @@
                     <h3>HTML5</h3>
                     <p>Structuring web pages and content with the latest standard markup language.</p>
                     <div class="skill-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     </div>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
@@ -112,11 +107,7 @@
                     <h3>CSS3</h3>
                     <p>Designing and styling modern, responsive layouts for a great user experience.</p>
                     <div class="skill-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     </div>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
@@ -124,11 +115,7 @@
                     <h3>JavaScript</h3>
                     <p>Enabling interactive and dynamic functionality on web pages to engage users.</p>
                     <div class="skill-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                     </div>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="400">
@@ -136,11 +123,7 @@
                     <h3>Git</h3>
                     <p>Using version control to efficiently manage code and collaborate on projects.</p>
                     <div class="skill-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                     </div>
                 </div>
             </div>
@@ -179,10 +162,16 @@
         <div class="section-container" data-aos="fade-up">
             <h2 class="section-title">Get In <span>Touch</span></h2>
             <div class="contact-container">
-                <form action="#" class="contact-form" data-aos="fade-right">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" data-aos="fade-right">
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your Name" required>
+
+                    <label for="email" class="sr-only">Your Email</label>
+                    <input id="email" type="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message" class="sr-only">Your Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    
                     <button type="submit">Send Message</button>
                 </form>
                 <div class="contact-info" data-aos="fade-left">
@@ -190,14 +179,15 @@
                     <p><i class="fa-solid fa-envelope"></i> huylk4597@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> (+84) 083 555 2953</p>
                     <div class="social-links-contact">
-                        <a href="https://www.linkedin.com/in/lekhachuy1902" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/LeKhacHuy1902/Gym-management-system.git" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/share/16bt3KQM5d/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/lekhachuy1902" target="_blank" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/LeKhacHuy1902/Gym-management-system.git" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/16bt3KQM5d/" target="_blank" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer>
         <p>&copy; 2025 Khắc Huy. All Rights Reserved.</p>
@@ -209,24 +199,29 @@
         // AOS Initialization
         AOS.init({ offset: 50, once: true });
 
-        // Mobile Menu Toggle Function
-        function toggleMenu() {
-            const hamburger = document.querySelector('.hamburger');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const overlay = document.getElementById('overlay');
-            const body = document.body;
+        // --- Logic cho Mobile Menu ---
+        const hamburgerBtn = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeBtn = document.getElementById('close-menu-btn');
+        const menuLinks = document.querySelectorAll('.mobile-nav-links a'); // Cập nhật selector
+        const body = document.body;
 
-            hamburger.classList.toggle('open');
+        function toggleMenu() {
+            hamburgerBtn.classList.toggle('open');
             mobileMenu.classList.toggle('open');
-            overlay.classList.toggle('active');
-            body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+
+            body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : 'auto';
         }
 
-        // Add Event Listener for the hamburger button
-        document.getElementById('hamburger-button').addEventListener('click', toggleMenu);
+        hamburgerBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
 
+        menuLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+        
+        // --- Typewriter Effect ---
         $(function() {
-            // --- Typewriter Effect ---
             const texts = ["DEVELOPER", "STUDENT", "PROGRAMMER"];
             let speed = 100;
             const $textElement = $('.typewriter-text');
@@ -260,4 +255,4 @@
         });
     </script>
 </body>
-</html
+</html>
